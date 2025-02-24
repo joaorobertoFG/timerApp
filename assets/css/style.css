@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  font-family: "Roboto", serif;
+  --secundary-color: radial-gradient(
+    circle,
+    #e6fdfd,
+    #dff8ff,
+    #dbf3ff,
+    #dcecff,
+    #e1e5ff,
+    #e0e5ff,
+    #dfe4ff,
+    #dee4ff,
+    #d4ebff,
+    #cbf2ff,
+    #c4f9ff,
+    #c4ffff
+  );
+  --primary-color: linear-gradient(
+    to right top,
+    #00160f,
+    #031715,
+    #091718,
+    #101719,
+    #151719,
+    #18191a,
+    #1a1a1b,
+    #1c1c1c,
+    #1f1f1f,
+    #212121,
+    #242424,
+    #272727
+  );
+
+  --title-color: #ff0054;
+  --text-color: #ced4da;
+}
+
+
+html {
+  font-family: "Roboto", serif;
+  background-image: var(--primary-color);
+  color: #ced4da; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+html h1 {
+  color: var(--title-color);
+  font-size: 30px;
+}
+
+.timer-main {
+  color: #00160f;
+  background-color: white;
+  width: 450px;
+  height: 150px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  font-size: 60px;
+}
+
+.botao-container {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 50px;
+}
+
+.botao {
+  font-size: 30px;
+  border: none;
+  border-radius: 500px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: 300ms;
+}
+
+.botao:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: 300ms;
+  color: #D84040;
+}
+
+.play:hover {
+  color: #3D8D7A;
+}
+
+.active {
+  color: #D84040;
+  transform: scale(1.3);
+  transition: 300ms;
+}
+
+.pausado {
+  color: #D84040;
+  transition: 300ms;
+}
+
+.playing {
+  transition: 300ms;
+  color: #3D8D7A;
+}
